@@ -11,7 +11,7 @@ There are two kinds of Carousels:
 Customize what is shown on each screen. Use our delegate methods to respond to events triggered by the Carousel (which screen is shown and which screen is tapped).
 
 
-![Image examples of two Carousels](https://github.com/sivx76/Swift-Table/blob/main/Other/Screenshots/Collection.png)
+![Image examples of two Carousels](https://github.com/sivx76/Swift-Carousel/blob/main/Other/Screenshots/Collection.png)
 
 
 ## Example:
@@ -27,12 +27,12 @@ That is all you need!
 
 
 ## Key Ideas:
-* In this framework, we refer to each screen or slide of a carousel as a **page**. Each page represents a **UIView.**To show the carousel content, you insert an Array of UIView objects. This will setup the carousel.
+* In this framework, we refer to each screen or slide of a carousel as a **page**. Each page represents a **UIView.** To show the carousel content, you insert an Array of UIView objects. This will setup the carousel.
 * There are 3 classes we have created: Carousel, ScrollingCarousel and PageIndicator.
 	* Carousel: the core UI object, which shows pages and can be heavily customized.
 	* ScrollingCarousel: has a duration that it waits before automatically cycling to the next page. Can be stopped or resumed.
 	* PageIndicator: the series of dots below the carousel that shows the progress. Can have its color, sizing or spacing changed.
-* Conform to the **CarouselDelegate** protocol to be able to intercept events from the Carousel. This includes knowing when the carousel’s page changed or if the carousel was tapped. You can access the **ScrollSource**enumeration to detect if the page change was triggered by the user or automatically from the ScrollingCarousel.
+* Conform to the **CarouselDelegate** protocol to be able to intercept events from the Carousel. This includes knowing when the carousel’s page changed or if the carousel was tapped. You can access the *ScrollSource* enumeration to detect if the page change was triggered by the user or automatically from the ScrollingCarousel.
 * For more detail, check out the Example Xcode project.
 
 
