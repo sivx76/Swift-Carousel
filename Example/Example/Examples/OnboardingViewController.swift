@@ -31,10 +31,13 @@ class OnboardingViewController: UIViewController {
         firstTextLabel.text = "Adventure awaits!"
         firstTextLabel.font = UIFont.systemFont(ofSize: 24)
         
-        let firstSubtitle = UILabel(frame: CGRect(x: 30, y: 80, width: 340, height: 80))
+        let parkIcon = UIImageView(frame: CGRect(x: 30, y: 80, width: 70, height: 70))
+        parkIcon.image = UIImage(named: "park-icon")
+        
+        let firstSubtitle = UILabel(frame: CGRect(x: 110, y: 70, width: 240, height: 80))
         firstSubtitle.numberOfLines = 2
         firstSubtitle.text = "Use Parks App to find beautiful outdoor experiences."
-        firstSubtitle.font = UIFont.systemFont(ofSize: 18)
+        firstSubtitle.font = UIFont.systemFont(ofSize: 16)
         firstSubtitle.textColor = .purple
         
         let firstImageView = UIImageView(frame: CGRect(x: 30, y: 170, width: view.frame.width * 0.9, height: view.frame.height * 0.6))
@@ -42,6 +45,7 @@ class OnboardingViewController: UIViewController {
         
         
         firstPage.addSubview(firstTextLabel)
+        firstPage.addSubview(parkIcon)
         firstPage.addSubview(firstImageView)
         firstPage.addSubview(firstSubtitle)
         
